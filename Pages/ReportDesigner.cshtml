@@ -1,0 +1,10 @@
+﻿@page "/ReportDesigner"
+@model AspCoreRazorPages.Pages.ReportDesignerModel
+@{
+    ViewData["Title"] = "ReportDesigner";
+}
+
+    <div style="height: 500px;width: 100%;">
+        <bold-report-designer id="designer" service-url="/api/ReportingAPI"></bold-report-designer>
+    </div>
+
