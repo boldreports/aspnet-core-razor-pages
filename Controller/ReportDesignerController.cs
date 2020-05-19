@@ -10,12 +10,12 @@ using BoldReports.Web.ReportDesigner;
 namespace ReportDesignerSample
 {
     [Route("api/[controller]/[action]")]
-    public class ReportingAPIController : Controller, BoldReports.Web.ReportDesigner.IReportDesignerController
+    public class ReportDesignerController : Controller, BoldReports.Web.ReportDesigner.IReportDesignerController
     {
         private Microsoft.Extensions.Caching.Memory.IMemoryCache _cache;
         private Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
 
-        public ReportingAPIController(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
+        public ReportDesignerController(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
         {
             _cache = memoryCache;
             _hostingEnvironment = hostingEnvironment;

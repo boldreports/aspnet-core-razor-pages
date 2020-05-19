@@ -9,6 +9,7 @@ namespace AspCoreRazorPages.Pages
 {
     public class ReportDesignerModel : PageModel
     {
+        public string serviceUrl = "/api/ReportDesigner";
         public void OnGet()
         {
 

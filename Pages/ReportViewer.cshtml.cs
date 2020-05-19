@@ -9,6 +9,9 @@ namespace AspCoreRazorPages.Pages
 {
     public class ReportViewerModel : PageModel
     {
+        public string reportPath = "sales-order-detail.rdl";
+        public string serviceUrl = "/api/ReportViewer";
+
         public void OnGet()
         {
 
