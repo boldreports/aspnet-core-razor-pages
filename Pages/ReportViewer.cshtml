@@ -1,0 +1,10 @@
+﻿@page "/ReportViewer"
+@model AspCoreRazorPages.Pages.ReportViewerModel
+@{
+    ViewData["Title"] = "ReportViewer";
+}
+
+    <div style="min-height: 600px;width: 100%;">
+        <bold-report-viewer id="viewer" report-path=@Model.reportPath report-service-url=@Model.serviceUrl></bold-report-viewer>
+    </div>
+
